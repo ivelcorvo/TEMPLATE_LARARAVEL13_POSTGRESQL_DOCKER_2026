@@ -1,4 +1,4 @@
-# Laravel API Template
+# Laravel Template
 
 Template Docker profissional para projetos Laravel 13 — pronto para APIs, com opção de adicionar Livewire 4 depois.
 

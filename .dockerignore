@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────
+# .dockerignore — reduz o contexto enviado ao Docker daemon
+# ─────────────────────────────────────────────────────────────
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentação
+README.md
+*.md
+
+# Ambiente local (NUNCA copiar para imagem)
+.env
+.env.*
+!.env.example
+
+# Dependências (serão instaladas dentro do container)
+src/vendor
+src/node_modules
+
+# Build/Cache do Laravel
+src/bootstrap/cache/*.php
+src/storage/logs/*
+src/storage/framework/cache/data/*
+src/storage/framework/sessions/*
+src/storage/framework/views/*
+
+# Editores
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
