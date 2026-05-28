@@ -52,12 +52,13 @@ docker compose build && docker compose up -d
 
 **4. Criar o Laravel 13 dentro de src/**
 ```bash
-docker compose run --rm app composer create-project laravel/laravel:^13.0 .
+docker compose run --rm app composer create-project laravel/laravel:^13.0 . --no-scripts
 ```
+O --no-scripts impede que ele rode os scripts pós-instalação (key:generate, migrations). assim podemos sobrescreve o src/.env, gera a key manualmente e roda as migrations na hora certa.
 
 > Se travar por timeout, aumente o limite:
 ```bash
-docker compose exec -e COMPOSER_PROCESS_TIMEOUT=2000 app composer create-project laravel/laravel:^13.0 .
+docker compose exec -e COMPOSER_PROCESS_TIMEOUT=2000 app composer create-project laravel/laravel:^13.0 . --no-scripts
 ```
 
 **5. Configurar a aplicação**
