@@ -1,5 +1,7 @@
 # Laravel Template
 
+Este template foi desenvolvido com auxílio de IA — especificamente o Claude (Anthropic).
+
 Template Docker profissional para projetos Laravel 13 — pronto para APIs, com opção de adicionar Livewire 4 depois.
 
 Stack: **PHP 8.4** · **Laravel 13** · **PostgreSQL 16** · **Redis 7** · **Nginx 1.27** · **Mailpit**
